@@ -1,0 +1,5 @@
+<a href="/usuario/novo">Novo Usuario</a><br/>
+
+<% usuario.forEach(usuario => { %>
+    <%= usuario.usuario %> <a href="/usuario/excluir/<%= usuario.id %>">Excluir</a> <br />
+<% })  %>
